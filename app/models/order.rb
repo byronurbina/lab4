@@ -1,6 +1,6 @@
 class Order < ActiveRecord::Base
 
-def boolean createOrder(clientNit, productCode)
+def Order.createOrder(clientNit, productCode)
 cliente = client.where(:nit => clientNit).first
 producto = product.where(:code => productCode).first
 
